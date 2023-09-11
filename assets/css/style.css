@@ -1,0 +1,811 @@
+/* reset some defaults */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 2*linear;
+}
+body{
+   padding:6px1px;
+   
+}
+/*set width to the bode and place it to the center of the page */
+header{
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(./../img/miniaturka-how-to-build-a-successtul-e-learning-platform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ position: relative;
+ overflow: hidden;
+  height: 100vh;
+}
+.overlay{
+    position: absolute;
+    bottom:1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 49, 0.712);
+    
+    
+    
+}
+
+
+.banner-text h4{
+    position: absolute;
+    top:400px;
+    left: 700px;
+
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.67);
+}
+.banner-text h1{
+    position: absolute;
+    top:500px;
+    left: 500px;
+    color: rgba(255, 255, 255, 0.71);
+
+}
+.btn-1{
+    
+    font-size: 20px;
+    position: relative;
+   left:720px;
+   top:500px;
+   border-radius: 30px;
+   background-color: #305fa5; 
+   color: white;
+   margin-top: 10px;
+        padding: 8px 15px;
+}
+/* select the nav container and apply properties */
+.nav-container{
+    
+    
+    /*apply flex to get right and left navigations in arow*/
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+/*target the ui and remove the bullets */
+.right-side , .left-side{
+    list-style-type: none;
+}
+/*change li display property from block to inline block */
+.right-side li, .left-side li{
+    display: inline-block;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.748);
+}
+
+/*style the anchor element*/
+.right-side li i, .left-side li i  {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #333;
+    padding: 14px 16px;
+    font-weight: bold;
+}
+/*apply hover*/
+.right-side li:hover, .left-side li:hover{
+    background-color: #ddd;
+}
+.container-fluid p{
+    position: relative;
+    left: 100px;
+    top: 40px;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-size: 30px;
+color: rgba(255, 255, 255, 0.71);
+}
+#navbarNav ul{
+    
+    display: flex;
+    justify-content:center;
+    margin-top:1px;
+    list-style: none;
+   
+    
+}
+#navbarNav ul li{
+    padding: 0 15px;
+    position: relative;
+    top: -6px;
+    transition: 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.863);
+}
+#navbarNav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.884);
+
+}
+#navbarNav ul li a:hover{
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Libre Baskerville', serif;
+    color: rgb(195, 195, 195);
+}
+.btn{
+    float: right;
+    font-size: 20px;
+    position: relative;
+   right:20px;
+   bottom: 30px;
+   border-radius: 30px;
+   background-color: #305fa5;
+   
+}
+.start-browse{
+    height: 300px;
+    text-align: center;
+  margin: 10px auto;
+  padding: 0 10%;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+.start-browse h2{
+    font-size: 40px;
+    color: #5e91b1;
+    padding-bottom: 15px;
+    text-shadow: 0 15px 10px rgb(0, 0, 0,0.2);
+}
+.row
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+}
+.col{
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(rgb(43, 124, 153),rgb(55, 78, 143));
+    color: white;
+    font-size: 25px;
+    line-height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15) ;
+}
+.col p{
+    position: relative;
+    bottom: 20px;
+    height: 1px;
+    right: 70px;
+  
+}
+.col div{
+    padding: 20px 0;
+    font-size: 20px;
+    position: relative;
+    bottom: 42px;
+    height: 1px;
+    right: 3px;
+
+}
+.col a{
+    position: relative;
+    bottom: 30px;
+    height: 1px;
+    left: 2px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+   
+
+}
+
+#btn:hover{
+    letter-spacing: 1px;
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.15);
+}
+.text{
+    position: relative;
+    top: 20px;
+}
+.text p{
+    color: #333;
+}
+.text a{
+    text-decoration: none;
+}
+.browser{
+    background-color: #ddd;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+      bottom:-1000px;
+    }
+    .browser img{
+        position: relative;
+        bottom: 50px;
+     
+    }
+    .browser img:hover{
+        transform:matrix(0.7,-0.5,0.4,0.4,0.5,0.6);
+        transition: 0.5s;
+    }
+    .browser p{
+        position: relative;
+        top: 50px;
+        left: 50px;
+     
+    }
+    
+    .browser h1{
+        position: relative;
+        top: 40px;
+        left: 50px;
+        color: #305fa5;
+    }
+    .browser ul {
+        position: relative;
+        top: 80px;
+        left: 50px;
+       list-style:none;
+    }
+    .browser ul li img{
+       position: relative;
+       top: 1px;
+    }
+    .browser button{
+       position: relative;
+       top: 120px;
+       left: 50px;
+       float: left;
+       background-color: #305fa5;
+       color: white;
+       
+
+    }
+    .browser button:hover{
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+    .wrapper{
+       
+        width:100%;
+        height: 80vh;
+        position: relative;
+        top:700px;
+        margin: 10px auto;
+        padding: 0 10%;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+    }
+    .wrapper h1{
+        color: #305fa5;
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 15px;
+        text-shadow: 0 15px 10px rgba(0, 0, 0,0.2);
+    }
+    .container{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit ,minmax(270px,1fr));
+    }
+    .box{
+       
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .box img{
+        height: 70px;
+    }
+    .box h3{
+        color: #444;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .box p{
+        color: #777;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .box a{
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left:   -70px;
+    }
+    
+    .btn{
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        margin-top: 10px;
+        padding: 8px 15px;
+        text-decoration: none;
+       
+       
+    }
+    .box:hover{
+        letter-spacing: 1px;
+    }
+    .btn:hover{
+        transform: scale(1.03);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+   
+    .course{
+        margin-top: 150px;
+        padding: 60px 20px;
+        background: #ddd;
+        height: 100vh;
+    }
+    .card p{
+        margin: 10px 0px;
+        letter-spacing: 2px;
+        color: #ddd;
+        padding: 0px 20px;
+    }
+    .flex-container-cards{
+        filter: drop-shadow(rgb(149, 161, 171)0px 0px 1px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        padding-top:70px;
+    }
+    .flex-container-cards .card{
+        background: linear-gradient(240deg,rgba(0, 0, 0, 0.407) 0% ,rgba(36, 36, 36, 0.653) 100%);
+        width: 300px;
+        transition: all 0.2s linear;
+        filter: drop-shadow(rgb(56, 92, 122)0px 0px 10px);
+    }
+    .flex-container-cards .card:hover{
+        transform: scale(1.1);
+    }
+    .flex-container-cards .card .card-img-shadow{
+        filter: drop-shadow(rgb(142, 163, 215)0px 0px 10px);
+       
+    }
+    .flex-container-cards .card .card-img-shadow img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        margin-bottom: 30px;
+       
+    }
+    .flex-container-cards .card .card-content{
+        margin: 0px 30px;
+    }
+    .flex-container-cards .card h2{
+        color: rgb(49, 124, 181);
+        text-align: center;
+    }
+    .flex-container-cards .card .button-shadow{
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+        transition: all 0.2s ease-in;
+    }
+    .flex-container-cards .card .button-shadow:hover{
+        filter: drop-shadow(rgba(14, 56, 75, 0.792)0px 0px 10px);
+    }
+    .flex-container-cards .card .button-shadow .card-button{
+        text-align: center;
+        margin: 20px 0;
+        padding: 10px 0;
+        background: linear-gradient(45deg,rgb(46, 111, 191) 0%,rgb(15, 40, 123)100%);
+        color: black;
+        font-weight: 600;
+        transition: all 0.2s ease-in;
+    }
+    .flex-container-cards .card .button-shadow .card-button:hover{
+        color: white;
+    }
+    .background{
+        width:100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(./../img/miniaturka-how-to-build-a-successtul-e-learning-platform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ position: relative;
+ top: 680px;
+ overflow: hidden;
+  height: 100vh;  
+        
+    }
+    .overlay-background{
+        position: absolute;
+        bottom:1px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(17, 17, 49, 0.712);
+        
+    }
+    
+    
+    .background h1{
+        font-size: 40px;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        top: 280px;
+        color:#5e91b1;
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+        transition: all 0.2s ease-in;
+    }
+    .background h1:hover{
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+    }
+    .background p{
+        text-align: center;
+        position: relative;
+        top: 290px;
+        color:#ddd;
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+        transition: all 0.2s ease-in;
+    }
+    .background p:hover{
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+    }
+    .background .overlay-background button{
+        position: relative;
+        top: 350px;
+       left:  680px;
+       filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+       transition: all 0.2s ease-in;
+    }
+    .background .overlay-background button .btn-1:hover{
+        filter: drop-shadow(rgb(71, 119, 187)0px 0px 5px);
+      
+    }
+    .main{
+        background-color:white;
+        width: 100%;
+        height:60vh;
+        position: absolute;
+          bottom:-3690px;
+          padding: 2rem;
+    }
+    .main-content{
+        flex-basis: 55%;
+    }
+    .main-content .number-1{
+        padding-right: 20px;
+        padding-top: 50px;
+        position:relative;
+        left:  280px;
+        margin-top: 10px;
+        margin-right: 10px;
+        
+
+    }
+    .main-content .number-1:hover{
+        transform:matrix(0.7,-0.5,0.4,0.4,0.5,0.6);
+        transition: 0.5s;
+    }
+    .main-content .number-2 {
+       
+        margin-top: 10px;
+        margin-right: 10px;
+       position:relative;
+       right: 100px;
+    }
+    .main-content .number-2:hover{
+        transform:matrix(0.7,-0.5,0.4,0.4,0.5,0.6);
+        transition: 0.5s;
+    }
+    .main-content h1{
+        color: #305fa5;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2rem 0;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+    .main-content p{
+        color: #333;
+        font-size: 1.2rem;
+        padding-bottom:2rem;
+    }
+    .main-content ul{
+        color: #333;
+        font-size: 1.2rem;
+        list-style: none;
+    }
+    .main-content button{
+     margin-right: 20px;
+     position: relative;
+     top: 30px;
+     right: 350px;
+
+    }
+    .main-content span .btn  {
+    background-color: white;
+    color: #305fa5;
+    }
+    .school-news{
+       height:500px;
+        margin-top: 410px;
+        padding-top:50px;
+        background-color:#ddd;
+    }
+    .school-news p{
+       text-align: center;
+       font-size: 1.0rem;
+       color: #333;
+       letter-spacing: 1px;
+      
+
+    }
+    .ca-1{
+        filter: drop-shadow(rgb(149, 161, 171)0px 0px 1px);
+        display: flex;
+        flex-wrap: wrap;
+        gap:50px;
+        justify-content: space-around;
+        align-items: center;
+        padding-top:30px;
+        margin: 0px 100px;
+        padding-right: 180px;
+    }
+    .ca-1:hover{
+        transform: scale(1.1);
+        transition: 0.5s ;
+    }
+    .card-1 {
+        background-color:white;
+        height: 200px;
+        width:400px;
+       position: relative;
+       bottom: -400px;
+       left: 100px;
+      
+       
+   }
+   
+    
+    .row img{
+        width:150px;
+        height: 200px;
+       position: relative;
+       right: 130px;
+       bottom:50px;
+      
+    }
+    .row .card-body{
+        padding-bottom: 90px;
+        position: relative;
+        bottom: 250px;
+        padding-left: 150px;
+        margin: 10px 0;
+       
+    }
+    .row .card-body h5{
+        color: #305fa5;
+        font-size: 30px;
+    }
+    .row .card-body p{
+        color: #333;
+        margin: 10px 0;
+    }
+    .pricing{
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 490px;
+        background:white;
+        height: 80vh;
+        padding-top: 60px;
+    }
+    .pricing h1 , .pricing p{
+       position: relative;
+       bottom: 70px;
+    }
+    .pricing p{
+        color: #333;
+      
+    }
+    .pricing-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top:80px;
+        padding-right: 10px;
+        padding-left: 10px;
+       
+    }
+    .card-3{
+        position:relative;
+        background: linear-gradient(240deg,rgb(166, 168, 189) 0% ,rgba(36, 64, 136, 0.653) 100%);
+        width: 300px;
+        height: 300px;
+        gap:50px;
+        transition: all 0.2s linear;
+        filter: drop-shadow(rgb(56, 92, 122)0px 0px 10px);
+    
+    }
+    .card-3:hover{
+       transform: scale(1.1);
+    }
+    .card-body-2 h5{
+        color:#ddd;font-size: 1.2rem;
+        padding: 20px 110px;
+    }
+    .card-body-2 .currency{
+        color:#ddd;font-size: 1.2rem;
+        padding: 2px 112px;
+        position: relative;
+        bottom: 20px;
+    }
+    .card-body-2 p{
+        padding: 10px 40px;
+        color:#0f2f5f;
+    }
+    .card-body-2 a{
+      position: relative;
+      top: 40px;
+      right:80px;
+    }
+    .services{
+        background-color:#ddd;
+      position: relative;
+      top:40px;
+      padding: 0 350px;
+      margin: 0 auto;
+      text-align: center;
+      height:60vh;
+     
+    }
+    .services h1{
+       padding-top: 20px;
+    }
+    .services p{
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .services img{
+        width: 100px;
+        margin-top: 20px;
+    }
+    .support{
+        width: 100%;
+        height: 40vh;
+        background-color:white;
+        padding:0 30px;
+        position: relative;
+        top: 40px;
+    }
+    .support h1{
+        padding-top: 20px;
+        color: #305fa5;
+    }
+    .support img{
+        padding-top: 20px;
+        margin-right: 20px;
+    }
+    .support p{
+        color:#201f1f;
+    }
+    .support .form-control{
+        width: 1000px;
+        height: 30px;
+        background-color: #0f2f5f;
+        color: #ddd;
+        margin-top: 7px;
+    }
+    .support .img-2 {
+        position: relative;
+       bottom:  18px;
+    }
+    .support .p-2{
+       padding-top:12px;
+    }
+    .footer{
+        background-color: #0f213b;
+       
+      
+        
+    }
+    .container{
+        max-width: 1170px;
+        margin: auto;
+       
+    }
+   
+    .container ul{
+        list-style: none;
+       
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        
+        
+       
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ddd;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #305fa5;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ddd;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #0f2f5f;
+        padding-left: 10px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin: 0 10px 10px 0;
+        background-color: rgba(255, 255, 255,0.2);
+        text-align: center;
+        border-radius: 50%;
+        line-height: 50px;
+        transition: all 0.5s ease;
+        color: #201f1f;
+        
+    }
+    .footer-col .social-links a:hover{
+        color: #305fa5;
+        background-color: #ddd;
+    }
+    
+    @media (max-width:770px){
+        .wrapper{
+             padding: 60px;
+        }
+        .course{
+            padding-top: 100px;
+        }
+        .footer-col{
+            width: 50%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+    }
+     
